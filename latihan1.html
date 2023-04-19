@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>vuejs</title>
+	<style>
+		body {
+			margin:15%;
+			font-family:sans-serif ;
+		}
+
+		.card {
+			margin-bottom: 30px;
+			border:1px solid #ccc;
+			padding:5px;
+		}
+
+		.card-group {
+			margin-bottom:10px;
+		}
+
+		.error {
+		color:red;
+		}
+
+		.active {
+			text-decoration: line-through;
+		}
+
+		.title {
+			margin-bottom: 0;
+		}
+
+		ul {
+		   padding:0;
+		   margin-top: 0;
+		}
+
+		li{
+
+			margin:5px;
+			border:1px solid #ccc;
+			padding:5px;
+		}
+
+		li label {
+			cursor:pointer;
+		}
+
+		input{
+			padding:3px;
+		}
+
+		.items {
+			display:flex;
+			justify-content:space-between;
+		}
+
+		a.btn-danger {
+			background: salmon;
+			color:#fff;
+			padding:2px;
+			text-decoration: none;
+		}
+
+</style>
+
+</head>
+<body>
+<div id="app">
+	<h2>belajar bersama</h2>
+
+	<p>administrator</p>
+	<div class="card">
+	  <div class="card-group">
+      	<label>judul halaman</label> <br>
+      	<input type="text">
+	  </div>
+         
+     <div class="card-group">
+      <label><input type="checkbox"> Daftar Kelas</label> 
+      <label><input type="checkbox"> Kelas Baru</label> 
+      <label><input type="checkbox"> Progress Kelas</label> 
+     </div> 
+   </div>
+
+   <div class="card">
+   	<label for="progress">Progress Kelas: (50%)</label>
+   	<progress id="progress" max="100" value="50"></progress>	
+   </div>
+
+   <div class="card">
+   	<form>
+   		<label for="">Kelas</label>
+   		<input type="text" placeholder="Kelas Baru">
+   		<button>Tambah</button>
+   	</form>	
+   </div>
+
+   <h3 class="title">Daftar Kelas (<small>4</small>)</h3>
+
+   <ul>
+   	<li class="items">
+   		<label><input type="checkbox"> HTML </label>
+   		<a href="#" class="btn-danger">x hapus</a>
+   	</li>
+   </ul>		
+</div>
+
+
+</body>
+</html>
